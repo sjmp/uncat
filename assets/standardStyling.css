@@ -1,0 +1,32 @@
+html {
+    background-color: ivory;
+    color: black;
+}
+
+/*
+div[numbers-widget]{
+    overflow: hidden;
+    width: auto;
+    background-color: black;
+    padding: 10px;
+    margin: 10px;
+}
+
+.number{
+    float: left;
+    background-color: slategrey;
+    padding: 10px;
+    margin: 10px;
+}
+
+div[scene-widget]{
+    background-color: black;
+    padding: 10px;
+    margin: 10px;
+}
+
+div[options-widget]{
+    background-color: black;
+    padding: 10px;
+    margin: 10px;
+}*/

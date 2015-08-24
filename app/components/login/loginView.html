@@ -1,0 +1,18 @@
+<html>
+    <div>
+        <form ng-submit="ctrl.submit()" name="loginForm">
+            <table class="login-table">
+                <tr>
+                    <td><label>Username:</label></td>
+                    <td><input ng-model="ctrl.user.username" type="text" placeholder="Enter your username" required></td>
+                </tr>
+                <tr>
+                    <td><label>Password:</label></td>
+                    <td><input ng-model="ctrl.user.password" type="password" placeholder="Enter your password" required></td>
+                </tr>   
+            </table>
+            <input ng-disabled="loginForm.$invalid" type="submit" value="Log In">
+        </form>
+        <input href="#/register" type="button" value="New User? Register Here">
+    </div>
+</html>
