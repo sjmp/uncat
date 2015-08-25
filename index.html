@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html >
     <head base href = "/">
-        <link rel="stylesheet" type="text/css" href="assets/standardStyling.css"> 
-
+        
+        
+        <!--Styling-->
+<!--        <script rel="stylesheet" type="text/css" src="assets/css/standardStyling.css"></script>-->
+        <link rel="stylesheet" type="text/css" href="assets/libs/bootstrap.min.css">
+        
+        <!-- Angular scripts -->
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular-route.min.js"></script>
         
-        <!-- Core scripts -->
+        <!-- Internal scripts -->
         <script src="app/app.module.js"></script>
         <script src="app/app.routes.js"></script>
         
@@ -23,7 +28,8 @@
 
         <title>UCL ComSci AngularJS application</title>
     </head>
+    <nav class = "navbar navbar-default"></nav>
     <body ng-app="uclApp">
-        <div ng-view></div> 
+        <div class="container" ng-view></div> 
     </body>
 </html>

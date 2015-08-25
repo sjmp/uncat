@@ -5,10 +5,16 @@ angular
     .config(function($routeProvider) {
         $routeProvider
 
-        //story router
+        //login route
         .when('/', {
             templateUrl: 'app/components/login/loginView.html',
             controller: 'loginController as ctrl'
+        })
+        
+        //register route
+        .when('/register', {
+            templateUrl: 'app/components/register/registerView.html',
+            controller: 'registerController as ctrl'
         });
 
     });
