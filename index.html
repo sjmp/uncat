@@ -4,12 +4,16 @@
         
         
         <!--Styling-->
-<!--        <script rel="stylesheet" type="text/css" src="assets/css/standardStyling.css"></script>-->
         <link rel="stylesheet" type="text/css" href="assets/libs/bootstrap.min.css">
         
         <!-- Angular scripts -->
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular-route.min.js"></script>
+        
+        <!-- Third party scripts-->
+        <script src="assets/libs/d3.min.js"></script>
+        <script src="assets/libs/line-chart.min.js"></script>
+        <script src="assets/libs/pie-chart.min.js"></script>
         
         <!-- Internal scripts -->
         <script src="app/app.module.js"></script>
@@ -25,17 +29,11 @@
         <script src="app/components/select/selectController.js"></script>
 
         
-        <!-- Directives -->
-<!--
-        <script src="app/shared/numbers/numbersDirective.js"></script>
-        <script src="app/shared/scene/sceneDirective.js"></script>
-        <script src="app/shared/options/optionsDirective.js"></script>
--->
-
+  
 
         <title>UCL ComSci AngularJS application</title>
     </head>
-    <nav class = "navbar navbar-default"></nav>
+    <nav class = "navbar navbar-default"><a class="navbar-brand" href="#/home">uncat</a></nav>
     <body ng-app="uclApp">
         <div class="container" ng-view></div> 
     </body>
