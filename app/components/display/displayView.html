@@ -1,0 +1,16 @@
+<html>
+    <div class="well">
+        <h3>Display Page</h3>
+        <p>Displaying a range of data in textual format is another key use case in most NHS cloud applications. This page simulates this.</p>
+    </div>
+    <div ng-repeat = "item in ctrl.samplejsonitems">
+        <h3 ng-bind = "item.name"></h3>
+        <h4>This lecturer's title is {{item.title}}</h4>
+        This lecturer specialises in: 
+        <ul ng-repeat = "area in item.areas">
+            <li ng-bind = "area.name">
+        </ul>
+        <div>This lecturer's average mark is </div>
+    </div>
+
+</html>

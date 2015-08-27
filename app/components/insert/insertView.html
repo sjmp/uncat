@@ -1,0 +1,65 @@
+<html>
+    <div class="panel-default">
+        <form ng-submit="ctrl.submit()" name="insertForm">
+            <div class="panel-body tab-panel">
+                <div class="well">
+                    <h3>Insert Page</h3>
+                    <p>NHS Applications central use is usually patients filling in information. This insert page is designed to offer a template for a variety of form-filling using</p>
+                </div>
+                <table class="login-table">
+                    <tr>
+                        <td><label>Text:</label></td>
+                        <td><input ng-model="ctrl.insertObject.text" type="text" placeholder="Text Type"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Number:</label></td>
+                        <td><input ng-model="ctrl.insertObject.number" type="number" placeholder="Number Type"></td>
+                    </tr> 
+                    <tr>
+                        <td><label>Number With Max:</label></td>
+                        <td><input ng-model="ctrl.insertObject.numbermax" type="number" placeholder="Number Type" max="5"></td>
+                    </tr> 
+                    <tr>
+                        <td><label>Number With Min /& Max:</label></td>
+                        <td><input ng-model="ctrl.insertObject.numberminmax" type="number" placeholder="Number Type" min="5" max="9"></td>
+                    </tr> 
+                    <tr>
+                        <td><label>Number With Min, Max /& and Step:</label></td>
+                        <td><input ng-model="ctrl.insertObject.numberminmaxstep" type="number" placeholder="Number Type" min="20" max="200" step="10"></td>
+                    </tr> 
+                    <tr>
+                        <td><label>Range</label></td>
+                        <td><input ng-model="ctrl.insertObject.range" type="range" placeholder="Range Type"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Data-bound value for range:</label></td>
+                        <td>{{ ctrl.insertObject.range }}</td>
+                    </tr> 
+                    <tr>
+                        <td><label>Date:</label></td>
+                        <td><input ng-model="ctrl.insertObject.date" type="date" placeholder="Date Type"></td>
+                    </tr> 
+                    <tr>
+                        <td><label>Password:</label></td>
+                        <td><input ng-model="ctrl.insertObject.password" type="password" placeholder="Password Type"></td>
+                    </tr>  
+                    <tr>
+                        <td><label>Radio:</label></td>
+                        <td><input ng-model="ctrl.insertObject.radio" type="radio" name="radioexample" value="Radio A" value="Radio A">Radio A</td><br>
+                        <td><input ng-model="ctrl.insertObject.radio" type="radio" name="radioexample" value="Radio B" value="Radio B">Radio B</td><br>
+                    </tr>  
+                    <tr>
+                        <td><label>Checkbox:</label></td>
+                        <td><input ng-model="ctrl.insertObject.checkA" type="checkbox" name="checkboxexample" value="Check A">Checkbox A</td>
+                        <td><input ng-model="ctrl.insertObject.checkB" type="checkbox" name="checkboxample" value="Check B">Checkbox B</td>
+                    </tr>  
+                    <tr>
+                        <td><label>Required field:</label></td>
+                        <td><input ng-model="ctrl.insertObject.required" type="text" placeholder="Text field with the 'required' tag" required></td>
+                    </tr>
+                </table>
+            </div>
+            <input class="btn btn-lg btn-success btn-block" ng-disabled="insertForm.$invalid" type="submit" value="Submit Type Input">
+        </form>
+    </div>
+</html>

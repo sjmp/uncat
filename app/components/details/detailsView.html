@@ -1,0 +1,21 @@
+<html>
+    <div class="well">
+        <h3>Details Page</h3>
+        <p>This page displays a series of tabs, which allow the user to hide and unhide divs containing third-party library visual data representations</p>
+    </div>
+    <ul class="nav nav-tabs nav-justified" role="tablist">
+        <li role="presentation" ng-class='{"active":ctrl.tab=="courses"}'>
+            <a href ng-click="ctrl.setTab('courses')" role = "tab">Courses</a>
+        </li> 
+
+        <li role="presentation" ng-class='{"active":ctrl.tab=="rooms"}'>
+            <a href ng-click="ctrl.setTab('rooms')" role = "tab">Rooms</a>
+        </li>
+
+        <li role="presentation" ng-class='{"active":ctrl.tab=="exams"}'>
+            <a href ng-click="ctrl.setTab('exams')" role = "tab">Exams</a>
+        </li>
+    </ul>
+    
+    <div>ng-show and hide values</div>
+</html>
