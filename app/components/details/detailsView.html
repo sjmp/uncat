@@ -21,26 +21,47 @@
         <h3>Pie</h3>    
         <p>Basic pie charts using the N3 library (AngularJS adaptation of popular D3 library)</p>
         <div class = "piecontainer">
-            <pie-chart class="pie" data="ctrl.piedata" options="ctrl.pieoptions"></pie-chart>
+            <pie-chart class="pie" data="ctrl.bigpiedata" options="ctrl.pieoptionsA"></pie-chart>
         </div>
-        <div class = "piecontainer col-xs-6 col-md-6">
-            <pie-chart class="pie" data="ctrl.piedata" options="ctrl.pieoptions"></pie-chart>
+        <div class = "custompiecontainer">
+            <pie-chart class="pie" data="ctrl.leftpiedata" options="ctrl.pieoptionsA"></pie-chart>
         </div>
-        <div class = "piecontainer col-xs-6 col-md-6">
-            <pie-chart class="pie" data="ctrl.piedata" options="ctrl.pieoptions"></pie-chart>
+        <div class = "custompiecontainer">
+            <pie-chart class="guage" data="ctrl.guagedata" options="ctrl.guageoptions"></pie-chart>
         </div>
-        <div class = "piecontainer col-xs-6 col-md-6">
-            <pie-chart class="pie" data="ctrl.piedata" options="ctrl.pieoptions"></pie-chart>
+        <div class = "custompiecontainer">
+            <pie-chart class="pie" data="ctrl.rightpiedata" options="ctrl.pieoptions"></pie-chart>
         </div>
     </div>
     
     <div ng-show="ctrl.tab == 'Line'">
         <h3>Line</h3>    
         <p>Basic line charts using the N3 library (AngularJS adaptation of popular D3 library)</p>
+        <linechart data="ctrl.graphdata" options="ctrl.weightoptions" mode="" width="700" height="350"></linechart>
     </div>
     
     <div ng-show="ctrl.tab == 'Bars'">
         <h3>Chart</h3>    
         <p>Loading bars using Bootstrap's own loading bar CSS alterations</p>
+                            <div class="progress">
+                      <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                        <span class="sr-only">40% Complete (success)</span>
+                      </div>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                        <span class="sr-only">20% Complete</span>
+                      </div>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                        <span class="sr-only">60% Complete (warning)</span>
+                      </div>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                        <span class="sr-only">80% Complete (danger)</span>
+                      </div>
+                    </div>
     </div>
 </html>
