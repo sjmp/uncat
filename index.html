@@ -20,6 +20,9 @@
         <script src="app/app.module.js"></script>
         <script src="app/app.routes.js"></script>
         
+        <!-- Authentication Model -->
+        <script src="app/shared/auth/authModel.js"></script>
+        
         <!-- Controllers --> 
         <script src="app/components/login/loginController.js"></script>
         <script src="app/components/register/registerController.js"></script>
@@ -28,14 +31,26 @@
         <script src="app/components/display/displayController.js"></script>
         <script src="app/components/details/detailsController.js"></script>
         <script src="app/components/select/selectController.js"></script>
-
+        
+        <!-- Models -->
+        <script src="app/components/login/loginModel.js"></script>
+        <script src="app/components/register/registerModel.js"></script>
+        <script src="app/components/home/homeModel.js"></script>
+        <script src="app/components/display/displayModel.js"></script>
+        <script src="app/components/details/detailsModel.js"></script>
         
   
 
-        <title>UCL ComSci AngularJS application</title>
+        <title>uncat</title>
     </head>
-    <nav class = "navbar navbar-default"><a class="navbar-brand" href="#/home">uncat</a></nav>
+    <!-- This is going to be the directive -->
+    <nav class = "navbar navbar-default">
+        <a class="navbar-brand" href="#/home">uncat </a>
+    </nav>
+   
+    
     <body ng-app="uclApp">
         <div class="container" ng-view></div> 
+    
     </body>
 </html>

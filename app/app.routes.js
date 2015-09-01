@@ -31,7 +31,7 @@ angular
         
         //display route
         .when('/display', {
-            templateUrl: 'app/components/display/displayView.html',
+            templateUrl: 'app/shared/sharedview/sharedView.html',
             controller: 'displayController as ctrl'
         })
         
@@ -43,7 +43,7 @@ angular
         
         //details route
         .when('/select', {
-            templateUrl: 'app/components/select/selectView.html',
+            templateUrl: 'app/shared/sharedview/sharedView.html',
             controller: 'selectController as ctrl'
         });
 

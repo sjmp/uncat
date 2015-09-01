@@ -1,3 +1,38 @@
 <html>
-
+    <div class="panel-default">
+        <form ng-submit="ctrl.submit()" name="loginForm">
+            <div class="panel-body tab-panel">
+                <table class="login-table">
+                    <tr>
+                        <td><label>Username:</label></td>
+                        <td><input ng-model="ctrl.user.username" type="text" placeholder="Enter username" required></td>
+                    </tr>
+                    <tr>
+                        <td><label>Password:</label></td>
+                        <td><input ng-model="ctrl.user.password" type="password" placeholder="Enter password" required></td>
+                    </tr>   
+                    <tr>
+                        <td><label>Confirm Password:</label></td>
+                        <td><input ng-model="ctrl.user.password" type="password" placeholder="Enter password" required></td>
+                    </tr> 
+                    <tr>
+                        <td><label>Date of Birth:</label></td>
+                        <td><input ng-model="ctrl.user.dob" type="date" required></td>
+                    </tr> 
+                     <tr>
+                        <td><label for="gender">Gender:</label></td>
+                        <td required>
+                            <input ng-model="ctrl.user.gender" value="male" type="radio"> Male 
+                            <input ng-model="ctrl.user.gender" value="female" type="radio">Female
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label><a>Agree to these Terms and Conditions?</a></label></td>
+                        <td><input type="radio">I agree</td>
+                    </tr>
+                </table>
+            </div>
+            <input class="btn btn-lg btn-success btn-block" ng-disabled="loginForm.$invalid" type="submit" value="Submit">
+        </form>
+    </div>
 </html>

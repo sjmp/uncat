@@ -2,7 +2,7 @@
     'use strict';
     angular
         .module('uclApp')   
-        .controller('detailsController', function() {
+        .controller('detailsController', function(detailsModel) {
             var self = this;
             self.tab = 'Pie';
         
@@ -13,11 +13,11 @@
             ];
             
             self.leftpiedata = [
-                {label: "one", value: 10, color: "red"}, 
-                {label: "two", value: 15, color: "blue"},
-                {label: "three", value: 50, color: "green"},
-                {label: "four", value: 20, color: "yellow"},
-                {label: "five", value: 5, color: "purple"}
+                {label: "one", value: detailsModel.datagraph[0], color: "red"}, 
+                {label: "two", value: detailsModel.datagraph[1], color: "blue"},
+                {label: "three", value: detailsModel.datagraph[2], color: "green"},
+                {label: "four", value: detailsModel.datagraph[3], color: "yellow"},
+                {label: "five", value: detailsModel.datagraph[4], color: "purple"}
             ];
             
             self.guagedata = [
@@ -25,6 +25,10 @@
                 ];
             
             self.pieoptionsA = {thickness: 80};
+            self.pieoptionsB = {thickness: 200};
             self.guageoptions = {thickness: 40, mode: "gauge", total: 360};
+        
+        
+            self.barlength = 90;
     });
 }());

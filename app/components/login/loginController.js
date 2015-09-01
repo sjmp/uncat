@@ -2,12 +2,11 @@
     'use strict';
     angular
         .module('uclApp')   
-        .controller('loginController', function($location) {
+        .controller('loginController', function(loginModel) {
             var self = this;
         
             this.submit = function(){
-                console.log(self.user);
-                $location.path('/home');
+                loginModel.submit(self.user);
             };
                 
     });
