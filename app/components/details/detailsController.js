@@ -21,7 +21,7 @@
             ];
             
             self.guagedata = [
-                {label: "Guage", value: 155, color: "#d62728", suffix: "%"}
+                {label: "Guage", value: 155, color: "red", suffix: "%"}
                 ];
             
             self.pieoptionsA = {thickness: 80};
@@ -51,5 +51,7 @@
                     hideOverflow: false,
                     columnsHGap: 5
                 };
+        
+            self.bardata = [80,60,40,20];
     });
 }());
