@@ -22,6 +22,9 @@
                     </ul>
                     <div>This lecturer's average mark is {{ item.averagemark }} </div>
                 </div>
+                <ul ng-repeat = "patient in item.patients">
+                    <li>Assigned to Patient {{ patient.nhsno }}</li>
+                </ul>
             </li>
         </ul>
     </div>

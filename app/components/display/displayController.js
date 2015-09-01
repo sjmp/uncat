@@ -16,7 +16,6 @@
                     var lowestmark = self.dummyitems[i].lowestmark;
                     var averagemark = (lowestmark + highestmark)/2;
                     self.dummyitems[i].averagemark = averagemark;
-                    console.log(self.dummyitems[i].averagemark);
                 };
             };
             self.calculateAverage();
