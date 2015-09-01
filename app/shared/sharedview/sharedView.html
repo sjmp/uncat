@@ -27,7 +27,7 @@
     </div>
     <div ng-hide="ctrl.title == 'Select Page'" class="col-xs-6 col-md-6">
         <div class="input-group">
-            <input ng-model="rightsearch" type="text" class="form-control" placeholder="Type to filter results"></input>
+            <input ng-model="rightsearch" type="text" class="form-control" placeholder="Search data from database"></input>
         </div><br>
         <ul class="list-group" ng-repeat = "item in ctrl.JSONmessages | filter:rightsearch">
             <li class="list-group-item">

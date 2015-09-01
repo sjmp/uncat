@@ -13,11 +13,11 @@
             ];
             
             self.leftpiedata = [
-                {label: "one", value: detailsModel.datagraph[0], color: "red"}, 
-                {label: "two", value: detailsModel.datagraph[1], color: "blue"},
-                {label: "three", value: detailsModel.datagraph[2], color: "green"},
-                {label: "four", value: detailsModel.datagraph[3], color: "yellow"},
-                {label: "five", value: detailsModel.datagraph[4], color: "purple"}
+                {label: "one", value: detailsModel.data[0], color: "red"}, 
+                {label: "two", value: detailsModel.data[1], color: "blue"},
+                {label: "three", value: detailsModel.data[2], color: "green"},
+                {label: "four", value: detailsModel.data[3], color: "yellow"},
+                {label: "five", value: detailsModel.data[4], color: "purple"}
             ];
             
             self.guagedata = [
@@ -27,8 +27,29 @@
             self.pieoptionsA = {thickness: 80};
             self.pieoptionsB = {thickness: 200};
             self.guageoptions = {thickness: 40, mode: "gauge", total: 360};
-        
-        
-            self.barlength = 90;
+            
+            self.linedata = [
+                {x: 0, value: detailsModel.data[0], otherValue: 14},
+                {x: 1, value: detailsModel.data[1], otherValue: 1},
+                {x: 2, value: detailsModel.data[2], otherValue: 11},
+                {x: 3, value: detailsModel.data[3], otherValue: 147},
+                {x: 4, value: detailsModel.data[4], otherValue: 87},
+                {x: 5, value: detailsModel.data[5], otherValue: 45}
+            ];
+            self.lineoptions = {
+                axes: {
+                    x: {key: 'x', type: 'linear', min: 0, max: 5, ticks: 5},
+                    y: {type: 'linear', min: 0, max: 50, ticks: 20, grid: true},
+                },
+                    margin: {
+                    left: 150
+                },
+                    series: [
+                        {y: 'value', color: 'red', thickness: '3px', type: 'area', striped: true, label: 'Data'},
+                    ],
+                    lineMode: 'linear',
+                    hideOverflow: false,
+                    columnsHGap: 5
+                };
     });
 }());

@@ -5,7 +5,7 @@
         .service('detailsModel', function(){
             var self = this;
         
-            self.datagraph = [10, 15, 50, 20, 5];
+            self.data = [10, 15, 50, 20, 5, 14];
 
     });
 }());
