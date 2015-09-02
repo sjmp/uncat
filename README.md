@@ -4,13 +4,16 @@
 ###Contents
 
 1. Installation
-2. Angular in three sentences
-3. Structure
-4. Navigation
-5. Adding new content
-6. Style guide
-7. Important sights
-8. Postscript on testing
+2. Prior Reading
+3. Angular in three sentences
+4. Bootstrap in two sentences
+5. Cloud applications in a sentence
+6. Structure
+7. Navigation
+8. Adding new content
+9. Style guide
+10. Design patterns
+11. Testing
 
 ###1. Installation
 
@@ -49,7 +52,7 @@ It is most well known for it's CSS classes, which we will be taking advantage of
 
 This template is a cloud application; it can be hosted as is as a web application or transferred into Cordova with Ionic to create a mobile application.
 
-###5. Structure
+###6. Structure
 
 The core idea is to split the structure up like so:
 
@@ -68,7 +71,7 @@ The two main files within app are *components/* and *shared/* - Components conta
 
 [To properly understand this layout, read the Scotch.io Angular format here.](https://scotch.io/tutorials/angularjs-best-practices-directory-structure)
 
-###6. Navigating Spang
+###7. Navigation
 
 The code is designed to be as modular as possible, meaning 'uclApp', the only application, is spread across mutliple files and folders.
 
@@ -93,7 +96,7 @@ Where important things live:
 * Custom directives are always within shared, as they are reusable
 * Any html or javascript that a custom directive might need is stored next to it
 
-###7. Adding new content
+###8. Adding new content
 
 Let's say you wanted to create a new tab within the primary column, the Hattery Tab, for buying and comparing beautiful hats of all kinds. 
 
@@ -122,7 +125,7 @@ These four steps are useful for understanding the structure of the program also.
 
 If you get lost, copy and paste existing views, controllers and services and remember to modify the route and the script links.
   
-###8. Style guide
+###9. Style guide
 
 I only camel case code, everything lower case is a folder or index.html.
 
@@ -130,7 +133,7 @@ All modular coding files include what module they are a part of and what they do
 
 The system follows a strict MVVC (Model View View-Controller model - No services without controllers unless absolutely neccesary, no controllers talking to other controllers.
 
-###9. Design Patterns
+###10. Design Patterns
 
 The template is designed to encourage not only the use of MVVC but of design patterns:
 
@@ -143,5 +146,5 @@ The template is designed to encourage not only the use of MVVC but of design pat
 * Services act as Facades when returning http calls to the controller
 * Dependency Injections (see above) are also examples of Inheritence and support polymorphism
 
-###10. Testing
+###11. Testing
 
